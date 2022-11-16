@@ -69,7 +69,7 @@ function updateSpeedScale(delta) {
 
 function updateScore(delta) {
     score += delta * 0.01;
-    scoreElem.textContent = `Wei score: ${Math.floor(score)}`
+    scoreElem.textContent = `Gwei score: ${Math.floor(score)}`
 }
 
 function handleStart() {
@@ -91,7 +91,7 @@ function handleLose() {
     nftScore = 0;
 
     nftTotalScoreElem.textContent = `NFT total score: ${window.totalNFTScore}`;
-    gweiTotalScoreElem.textContent = `Wei total score: ${window.totaGweiScore}`;
+    gweiTotalScoreElem.textContent = `Gwei total score: ${window.totalGweiScore}`;
     nftScoreElem.textContent = `NFT Score: ${nftScore}`;
 
     setPlayerLose()
